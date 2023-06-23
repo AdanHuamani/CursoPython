@@ -55,7 +55,30 @@ elif año % 4 == 0 and año % 100 == 0 and año % 400 == 0:
         
 ##EJERCICIO N° 5
 ## TAREA DE PIEDRA, PAPEL O TIJERA.
+##Otra Clase
+lista=[]
+print(lista)
+primerdato=input("ingresa una fruta: ")
+lista.append(primerdato)
+print(lista)
+segundodato=input("ingrese una segunda fruta: ")
+lista.append(segundodato)
+print(lista)
 
-##EJERCICIOS##
-colores=[]
+##crear un programa que me deje ingresar datos en una lista vacia
+# Creamos una lista vacía
+lista = []
 
+# Función para ingresar datos a la lista
+def ingresar_datos():
+    while True:
+        dato = input("Ingresa un dato (o 'salir' para terminar): ")
+        if dato.lower() == "salir":
+            break
+        lista.append(dato)
+
+# Llamamos a la función para ingresar datos
+ingresar_datos()
+
+# Mostramos la lista resultante
+print("La lista final es:", lista)
