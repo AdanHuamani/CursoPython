@@ -1,0 +1,1 @@
+##Tareas: mostrar la susecion fibocci de los 10 primeros numeros.
