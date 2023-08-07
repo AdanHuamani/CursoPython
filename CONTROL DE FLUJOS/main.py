@@ -177,12 +177,13 @@
 #     return totalSuma
 # print(sumaNumeros(lista))
 
-###NUMERO MENOR
-lista= [23, 5, 78, 12, 45, 9, 2]
-def numeromayor (arrayNumeros):
-    mayor=arrayNumeros[0]
-    for numero in arrayNumeros:
-        if numero > mayor:
-            mayor=numero
-return mayor
-print(numeromayor(lista))
+# #NUMERO MENOR
+# lista= [23, 5, 78, 12, 45, 9, 2]
+# def numeromayor (arrayNumeros):
+#     mayor=arrayNumeros[0]
+#     for numero in arrayNumeros:
+#         if numero > mayor:
+#             mayor=numero
+# return mayor
+# print(numeromayor(lista)):
+
