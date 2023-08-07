@@ -1,9 +1,9 @@
-##Los programas se manejan de manera secuencial
-##control de flujo
-## 1.condicional: Realiza algo si se cumple ciertas condiciones 
-##Bloques: 
-## cuando nosotros utilizamos cualquier control de 
-##flujo o funciones del codigo que se debe ejecutar despues debera estar definido por bloques o identaciones
+# #Los programas se manejan de manera secuencial
+# #control de flujo
+# # 1.condicional: Realiza algo si se cumple ciertas condiciones 
+# #Bloques: 
+# # cuando nosotros utilizamos cualquier control de 
+# #flujo o funciones del codigo que se debe ejecutar despues debera estar definido por bloques o identaciones
 
 
 # ##EJERCICIO:
@@ -89,9 +89,9 @@
 #     if valor == "i":
 #         print(valor,indice)
 
-## CREAR UNA LISTA QUE ALMACENE LOS NUMEROS DE UNO AL DIEZ
-## CREAR UNA FUNCION QUE ME PERMITA RECIBIR COMO PARAMETRO UNA LISTA
-## LA FUNCION TENDRA QUE RETORNAR UN NUEVO ARRAY CON LOS NUMEROS PARES QUE EXISTEN 
+# # CREAR UNA LISTA QUE ALMACENE LOS NUMEROS DE UNO AL DIEZ
+# # CREAR UNA FUNCION QUE ME PERMITA RECIBIR COMO PARAMETRO UNA LISTA
+# # LA FUNCION TENDRA QUE RETORNAR UN NUEVO ARRAY CON LOS NUMEROS PARES QUE EXISTEN 
 # Crear la lista que almacene los números del uno al diez
 # lista=[1,2,3,4,5,6,7,8,9,10]
 # def numeros_pares(array):
@@ -109,17 +109,80 @@
 # print("Los números pares son:")
 # print(numeros_pares(lista))
 
-## hacer un programa que pida al usuario un texto y evaluar con una funcion la cantidad de vocales a que tiene el texto:
-def contar_vocales_a(texto):
-    cantidad_a = 0
-    for letra in texto:
-        if letra.lower() == 'a':
-            cantidad_a += 1
-    return cantidad_a
-def main():
-    texto = input("Ingresa un texto: ")
-    cantidad_vocales_a = contar_vocales_a(texto)
-    print("La cantidad de letras 'a' en el texto es:", cantidad_vocales_a)
-if __name__ == "__main__":
-    main()
+# # hacer un programa que pida al usuario un texto y evaluar con una funcion la cantidad de vocales a que tiene el texto:
+# def contarvocales_a(texto):
+#     cantidad_a = 0
+#     for letra in texto:
+#         if letra.lower() == 'a':
+#             cantidad_a += 1
+#     return cantidad_a
+# def main():
+#     texto = input("Ingresa un texto: ")
+#     cantidadvocales_a = contarvocales_a(texto)
+#     print("La cantidad de vocal 'a' en el texto es:", cantidadvocales_a)
+# if __name__ == "main":
+#     main()
 
+# # el objeto trabaja con clave y valor
+# objeto={"alumno":"jory","edad":50,"amigos":["mirella","anthony"]}
+# objeto["alumno"]="moises"
+# objeto["edad"]=25
+# lista=[{"nombre":"jory"},{"nombre":"moises"}]
+# for list in enumerate(lista):
+#     print(list)
+
+# ## un objeto de tus datos personales:
+# objeto={}
+# objeto["nombre"]=input("ingrese su nombre: ")
+# objeto["Apellidos"]=input("ingrese sus apellidos: ")
+# objeto["edad"]=int(input("ingrese su edad: "))
+# objeto["sexo"]=input("ingrese M si es masculino y F si es Femenino: ")
+# print(objeto)
+
+# ## Una lista que contenga 2 objetos:
+# lista=[]
+# while True:
+#     objeto={}
+#     objeto["nombre"]=input("nombre de la mascota: ")
+#     objeto["edad"]=int(input("edad de la mascota: "))
+#     objeto["sexo"]=input("Ingresa M si es macho y H si es hembra: ")
+#     objeto["comidas"]=[]
+#     while len(objeto["comidas"])<3:
+#         comida=input("ingrese la comida favorita:")
+#         objeto["comidas"].append(comida)
+#     lista.append(objeto)
+#     condicion = input("Deseas agregar otra mascota: (escribe 'Continuar' o 'Salir'): ")
+#     if condicion.lower() == "salir":
+#         break
+# print(lista)
+
+# # mis datos
+# def miObjeto(**valores):
+#     nuevoObjeto={
+#         "nombre":valores["a"],
+#         "apellidos":valores["b"],
+#         "edad":valores["c"],
+#         "sexo":valores["d"],
+#         "direccion":valores["e"],
+#     }
+#     return nuevoObjeto
+# print (miObjeto (a="Adan",b="Huamani Colorado",c="19",d="masculino",e="por ahi"))
+
+# ##Suma
+# lista=[1,4,3,2,]
+# def sumaNumeros (arrayNumeros):
+#     totalSuma=0
+#     for numero in arrayNumeros:
+#         totalSuma += numero
+#     return totalSuma
+# print(sumaNumeros(lista))
+
+###NUMERO MENOR
+lista= [23, 5, 78, 12, 45, 9, 2]
+def numeromayor (arrayNumeros):
+    mayor=arrayNumeros[0]
+    for numero in arrayNumeros:
+        if numero > mayor:
+            mayor=numero
+return mayor
+print(numeromayor(lista))
