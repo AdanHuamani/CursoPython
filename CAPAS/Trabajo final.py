@@ -1,3 +1,9 @@
+## crear un programa que me pida los siguientes datos
+## nombres, apellidos, DNI, programa de estudios,
+## de las unidades didacticas pedira los siguientes datos 
+## el nombre de la unidad y el promedio
+## la condicion se autocompletara en relacion del promedio 
+## el objeto tendra la siguiente estructura
 alumnos = {}
 alumnos["nombre"] = input("Ingrese el nombre del alumno: ")
 alumnos["apellidos"] = input("Ingrese los apellidos del alumno: ")
